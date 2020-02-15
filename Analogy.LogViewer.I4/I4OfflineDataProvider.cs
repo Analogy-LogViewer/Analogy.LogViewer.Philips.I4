@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
 using System.Threading;
 using System.Threading.Tasks;
 using Analogy.Interfaces;
-using Analogy.LogViewer.Augmedics.Managers;
+using Analogy.LogViewer.Philips.I4.Managers;
 
-namespace Analogy.LogViewer.Augmedics
+namespace Analogy.LogViewer.Philips.I4
 {
     class I4OfflineDataProvider : IAnalogyOfflineDataProvider
     {

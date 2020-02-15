@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Analogy.Interfaces;
 
-namespace Analogy.LogViewer.Augmedics
+namespace Analogy.LogViewer.Philips.I4
 {
     public static class ChangeLogList
     {

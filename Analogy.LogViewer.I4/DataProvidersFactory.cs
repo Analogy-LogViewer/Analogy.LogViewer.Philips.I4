@@ -2,7 +2,7 @@
 using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
 
-namespace Analogy.LogViewer.Augmedics
+namespace Analogy.LogViewer.Philips.I4
 {
     public class DataProvidersFactory : IAnalogyDataProvidersFactory
     {

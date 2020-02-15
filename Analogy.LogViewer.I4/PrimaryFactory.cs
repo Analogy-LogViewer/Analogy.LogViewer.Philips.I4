@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Analogy.Interfaces;
 using Analogy.Interfaces.Factories;
 
-namespace Analogy.LogViewer.Augmedics
+namespace Analogy.LogViewer.Philips.I4
 {
     public class PrimaryFactory : IAnalogyFactory
     {
