@@ -6,13 +6,13 @@ namespace Analogy.LogViewer.Augmedics
 {
     public class DataProvidersFactory : IAnalogyDataProvidersFactory
     {
-        public string Title => "Augmedics Offline Logs";
+        public string Title => "I4 Offline Logs";
 
         public IEnumerable<IAnalogyDataProvider> Items { get; set; }
 
         public DataProvidersFactory()
         {
-            Items= new List<IAnalogyDataProvider> { new OfflineDataProvider() };
+            Items= new List<IAnalogyDataProvider> { new I4OfflineDataProvider() };
         }
     }
 }

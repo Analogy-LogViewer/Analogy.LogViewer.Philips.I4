@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSourceFactory.cs" />
+    <Compile Include="DataProvidersFactory.cs" />
     <Compile Include="I4FileParser.cs" />
     <Compile Include="ChangeLogList.cs" />
     <Compile Include="Managers\LogManager.cs" />
-    <Compile Include="OfflineExampleDataProvider.cs" />
+    <Compile Include="I4OfflineDataProvider.cs" />
     <Compile Include="PrimaryFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

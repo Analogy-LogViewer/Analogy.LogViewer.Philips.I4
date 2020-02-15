@@ -11,7 +11,7 @@ namespace Analogy.LogViewer.Augmedics
     {
         public static IEnumerable<AnalogyChangeLog> GetChangeLog()
         {
-            yield return new AnalogyChangeLog("Initial commit", AnalogChangeLogType.None, "Lior Banai", new DateTime(2020, 02, 12));
+            yield return new AnalogyChangeLog("Initial commit", AnalogChangeLogType.None, "Lior Banai", new DateTime(2020, 02, 15));
         }
     }
 }
