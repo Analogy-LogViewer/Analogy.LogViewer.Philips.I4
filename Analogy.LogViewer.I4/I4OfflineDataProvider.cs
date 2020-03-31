@@ -64,7 +64,6 @@ namespace Analogy.LogViewer.Philips.I4
             return fileNames.All(CanOpenFile);
         }
 
-        public bool DisableFilePoolingOption { get; } = false;
 
         private static List<FileInfo> GetSupportedFilesInternal(DirectoryInfo dirInfo, bool recursive)
         {
