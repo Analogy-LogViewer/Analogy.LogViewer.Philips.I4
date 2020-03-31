@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Analogy.Interfaces;
+using Analogy.LogViewer.Philips.I4.Managers;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Analogy.Interfaces;
-using Analogy.LogViewer.Philips.I4.Managers;
 
 namespace Analogy.LogViewer.Philips.I4
 {
@@ -16,7 +16,7 @@ namespace Analogy.LogViewer.Philips.I4
 
         public bool CanSaveToLogFile { get; } = false;
         public string FileOpenDialogFilters { get; } = "Plain nlog file (*.nlog)|*.nlog";
-        public string FileSaveDialogFilters { get; } = String.Empty;
+        public string FileSaveDialogFilters { get; } = string.Empty;
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
         public string InitialFolderFullPath { get; } = Environment.CurrentDirectory;
         private ILogParserSettings LogParserSettings { get; set; }
@@ -62,7 +62,10 @@ namespace Analogy.LogViewer.Philips.I4
         {
             return fileNames.All(CanOpenFile);
         }
-        public static List<FileInfo> GetSupportedFilesInternal(DirectoryInfo dirInfo, bool recursive)
+
+        public bool DisableFilePoolingOption { get; } = false;
+
+        private static List<FileInfo> GetSupportedFilesInternal(DirectoryInfo dirInfo, bool recursive)
         {
             List<FileInfo> files = dirInfo.GetFiles("*.nlog")
                 .ToList();
