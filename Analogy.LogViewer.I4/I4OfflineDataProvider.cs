@@ -19,9 +19,10 @@ namespace Analogy.LogViewer.Philips.I4
         public string FileSaveDialogFilters { get; } = string.Empty;
         public IEnumerable<string> SupportFormats { get; } = new[] { "*.nlog" };
         public string InitialFolderFullPath { get; } = Environment.CurrentDirectory;
+        public bool DisableFilePoolingOption { get; } = false;
         private ILogParserSettings LogParserSettings { get; set; }
         private I4FileParser I4FileParser { get; set; }
-        private string AugmedicsFileSetting { get; } = "i4Settings.json";
+        private string I4FileSetting { get; } = "i4Settings.json";
         public I4OfflineDataProvider()
         {
         }
