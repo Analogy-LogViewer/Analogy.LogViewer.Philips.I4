@@ -2,6 +2,7 @@
 using Analogy.LogViewer.Philips.I4.Managers;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Threading;
@@ -23,6 +24,12 @@ namespace Analogy.LogViewer.Philips.I4
         private ILogParserSettings LogParserSettings { get; set; }
         private I4FileParser I4FileParser { get; set; }
         private string I4FileSetting { get; } = "i4Settings.json";
+        public bool UseCustomColors { get; set; } = false;
+        public IEnumerable<(string originalHeader, string replacementHeader)> GetReplacementHeaders()
+            => Array.Empty<(string, string)>();
+
+        public (Color backgroundColor, Color foregroundColor) GetColorForMessage(IAnalogyLogMessage logMessage)
+            => (Color.Empty, Color.Empty);
         public I4OfflineDataProvider()
         {
         }
