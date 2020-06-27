@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Analogy.LogViewer.Interfaces">
-      <Version>2.2.5</Version>
+      <Version>2.3.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup />
