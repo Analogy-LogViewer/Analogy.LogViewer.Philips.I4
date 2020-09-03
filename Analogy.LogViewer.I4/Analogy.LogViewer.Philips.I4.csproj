@@ -5,7 +5,7 @@
     <Company>LIor Banai</Company>
     <Product>Analogy.LogViewer.Philips.I4</Product>
     <Description>Analogy Log Viewer Data Source Example</Description>
-    <Copyright>Copyright ©  2019</Copyright>
+    <Copyright>Copyright © 2019</Copyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
