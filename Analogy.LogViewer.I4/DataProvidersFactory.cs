@@ -7,8 +7,8 @@ namespace Analogy.LogViewer.Philips.I4
 {
     public class DataProvidersFactory : IAnalogyDataProvidersFactory
     {
-        public Guid FactoryId { get; } = PrimaryFactory.Id;
-        public string Title => "I4 Offline Logs";
+        public Guid FactoryId { get; set; } = PrimaryFactory.Id;
+        public string Title { get; set; } = "I4 Offline Logs";
         public IEnumerable<IAnalogyDataProvider> DataProviders { get; } = new List<IAnalogyDataProvider> { new I4OfflineDataProvider() };
 
     }

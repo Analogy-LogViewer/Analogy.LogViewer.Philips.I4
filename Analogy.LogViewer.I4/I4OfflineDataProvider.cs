@@ -12,11 +12,11 @@ namespace Analogy.LogViewer.Philips.I4
 {
     class I4OfflineDataProvider : IAnalogyOfflineDataProvider
     {
-        public Guid Id { get; } = new Guid("266B3711-5D05-496E-8297-3805E3C78388");
-        public Image LargeImage => null;
-        public Image SmallImage => null;
+        public Guid Id { get; set; } = new Guid("266B3711-5D05-496E-8297-3805E3C78388");
+        public Image LargeImage { get; set; } = null;
+        public Image SmallImage { get; set; } = null;
 
-        public string OptionalTitle { get; } = "I4 Offline log";
+        public string OptionalTitle { get; set; } = "I4 Offline log";
 
         public bool CanSaveToLogFile { get; } = false;
         public string FileOpenDialogFilters { get; } = "Plain nlog file (*.nlog)|*.nlog";
